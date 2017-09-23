@@ -1,0 +1,110 @@
+body
+  width: 100%
+  height: 100%
+  background-color: #212122
+  color: #aeafb0
+  font-family: 'Lato', sans-serif
+  
+a
+  color: #fff
+  text-decoration: none
+
+.container
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 100%
+  max-width: 1200px
+  margin: 0 auto
+  @media screen and (max-width: 1300px)
+    max-width: 80%  
+  
+.search-wrap
+  width: 100%
+  padding-top: 100px
+  position: relative
+  
+.search-bar
+  border: 0
+  display: block
+  width: 100%
+  margin: 20px
+  border-bottom: 5px solid #323232
+  background-color: #212122
+  color: #aeafb0
+  font-size: 100px
+  font-family: 'Cabin', sans-serif
+  @media screen and (max-width: 768px)
+    font-size: 50px
+    margin: 0
+  
+.clear-input
+  position: absolute
+  right: 0
+  bottom: 100px
+  font-size: 50px
+  cursor: pointer
+  @media screen and (max-width: 768px)
+    font-size: 35px
+    bottom: 40px
+  
+.search-buttons
+  margin-top: 40px
+
+input
+  outline: 0
+
+input:focus
+  border-bottom: 5px solid #515151
+  transition: .3s
+  box-shadow: 0px 9px 5px -7px rgba(0,0,0,0.35)
+  
+.btn
+  cursor: pointer
+  font-family: 'Raleway', sans-serif
+  margin: 0 auto
+  text-align: center
+  padding: 10px
+  background-color: transparent
+  border: 0
+  color: #fff
+  border: 1px solid #323232
+  margin: 10px
+  font-size: 12px
+  transition: .3s
+  &:hover
+    border: 1px solid #515151
+    box-shadow: 0px 9px 5px -7px rgba(0,0,0,0.25)
+  
+// STYLE FOR RESULTS
+.wrap-results
+  font-family: 'Lato',sans-serif
+  font-size: 16px !important
+  margin: 100px 0 0 0
+  padding: 0 0 20px 0
+  font-weight: 400
+  line-height: 26px
+  letter-spacing: .5px
+  width: 80%
+  @media screen and (max-width: 768px)
+    width: 100%
+    margin: 20px 0 0 0
+  
+.result
+  margin: 30px 10px
+  padding: 20px
+  @media screen and (max-width: 768px)
+    margin: 10px
+    padding: 5px
+  &:hover
+    background-color: #1f1e1e
+
+  
+.result-link
+  color: #78868e
+  padding-bottom: 10px
+  display: block
+  border-bottom: 1px solid
+  transition: .2s
+  &:hover
+    color: #aabfcb
